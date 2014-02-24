@@ -1,0 +1,61 @@
+{
+            "dados": {
+			  "id": "3455",
+	          "nome": "Pedro Santos",
+		      "email": "pedro_santos@ig.com.br",
+		      "cpf": "478.632.552-01",
+		      "sexo": "M",
+		      "data_nascimento": "24/02/1981"
+			},
+            "data_enderecos": {
+			  "enderecos": [
+			    {
+				  "tipo": "entrega",
+		          "cep": "03273300",
+			      "logradouro": "Tapacoas",
+			      "numero": "176",
+			      "bairro": "Santa Clara",
+			      "cidade": "São Paulo",
+			      "uf": "SP"
+		        },
+				{
+				  "tipo": "cobrança",
+		          "cep": "05001100 ",
+			      "logradouro": "Francisco Matarazzo",
+			      "numero": "1500",
+			      "bairro": "Barra Funda",
+			      "cidade": "São Paulo",
+			      "uf": "SP"
+		        }
+			  ] 
+		    },
+			"data_carrinho": {
+			  "itens" : [
+			  {
+			    "nome":" Sony KDL-55HX855",
+				"imagem": "images/tv-led.jpg",
+				"descricao": "Smart TV LED 3D 55\"",
+				"preco": "4.599,00",
+				"qtdade": "1"
+			  },
+			  { "nome":"Óculos LG AG-F310",
+				"imagem": "images/oculos-3d.jpg",
+				"descricao": "Óculos para Smart TVs preto",
+				"preco": "35,90",
+				"qtdade": "4"
+			  },
+			  { "nome":"Sony Blu-Ray Player",
+				"imagem": "images/blu-ray.jpg",
+				"descricao": "Blu-Ray Player 3D Sony BDP S4100",
+				"preco": "358,00",
+				"qtdade": "1"
+			  },
+			  { "nome":"Câmera Samsung",
+				"imagem": "images/camera-samsung.jpg",
+				"descricao": "Câmera Skype Samsung VG-STC3000/ZD",
+				"preco": "391,00",
+				"qtdade": "1"
+			  }
+			  ]
+			}
+}

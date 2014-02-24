@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta description="Controle seus pedidos, seus dados pessoais e endereço de entrega com o Walcart" />
+<title>Walcart - Seu carrinho de compras</title>
+<link rel="stylesheet/less" type="text/css" href="build/css/styles.less" />
+<script type="text/javascript" src="build/libs/libs.min.js"></script>
+<script> var Walcart = Walcart || {}; </script>
+<script type="text/javascript" src="build/js/scripts.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+      <header id="page-header">
+        <h1 class="logo"><a href="#">Walmart</a></h1>
+      </header>
+      
+      <section id="main">
+        <div id="my-account" class="center modal">
+              <nav id="nav-user">
+                <ul class="inline-list tabs">
+                  <li data-page="carrinho" class="active"><a href="#carrinho"><i class="icon-cart"> </i>Meu Carrinho</a></li>
+                  <li data-page="dados"><a href="#dados"><i class="icon-user"> </i>Meus Dados</a></li>
+                  <li data-page="enderecos"><a href="#enderecos"><i class="icon-home"> </i>Endereços</a></li>
+              </ul>
+              </nav>
+              <div id="user-data" class="tab-body">
+              </div>
+        </div>
+      </section>
+      
+      <footer id="page-footer">
+        <p>&copy; 2014 Walmart. Todos os direitos reservados</p>
+      </footer>
+  </div>
+  
+</body>
+</html>

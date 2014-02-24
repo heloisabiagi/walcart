@@ -1,0 +1,25 @@
+<form id="user-enderecos" name="user_enderecos">
+<% for(var i=0; i< enderecos.length; i++) { %>
+  <fieldset name="<%= enderecos[i].tipo %>" id="<%= enderecos[i].tipo %>">
+  <legend>Endereco de <%= enderecos[i].tipo %></legend>
+  <div class="form-container">
+    <label for="cep">CEP:</label> <input type="text" name="cep" value="<%= enderecos[i].cep %>" disabled />
+  </div>
+    <div class="form-container">
+    <label for="logradouro">Logradouro:</label> <input type="text" name="cep" value="<%= enderecos[i].logradouro %>" class="size-300" disabled />
+    </div>
+	<div class="form-container">
+    <label for="numero">N&uacute;mero:</label> <input type="text" name="cep" value="<%= enderecos[i].numero %>" class="size-80" disabled />
+    </div>
+	<div class="form-container">
+    <label for="bairro">Bairro:</label> <input type="text" name="bairro" value="<%= enderecos[i].bairro %>" disabled />
+    </div>
+	<div class="form-container">
+    <label for="Cidade">Cidade:</label> <input type="text" name="cidade" value="<%= enderecos[i].cidade %>" disabled />
+    </div>
+	<div class="form-container">
+    <label for="uf">UF:</label> <input type="text" name="uf" value="<%= enderecos[i].uf %>" class="size-80" disabled />
+    </div>
+  </fieldset>
+  <% } %>
+</form>

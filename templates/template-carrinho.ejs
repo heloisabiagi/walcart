@@ -1,0 +1,21 @@
+<table id="tabela-itens">
+<thead>
+  <th>Item</th>
+  <th>Imagem</th>
+  <th>Descrição</th>
+  <th>Preço (R$)</th>
+  <th>Quantidade</th>
+</thead>
+
+<tbody>
+<% for(var i=0; i< itens.length; i++) { %>
+<tr>
+  <td><%= itens[i].nome %></td>
+  <td><img src="<%= itens[i].imagem %>" alt="<%= itens[i].nome %>"/></td>
+  <td><%= itens[i].descricao %></td>
+  <td class="td-preco"><%= itens[i].preco %></td>
+  <td><%= itens[i].qtdade %></td>
+</tr>  
+  <% } %> 
+</tbody>  
+</table>

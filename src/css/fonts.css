@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * Adiciona as fontes customizadas ao projeto  
+ */
+@font-face {
+    font-family: 'open sans';
+    src: url('../../fonts/OpenSans-Light-webfont.eot');
+    src: url('../../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/OpenSans-Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
