@@ -4,7 +4,9 @@
  */
  
 (function(){
-		  
+
+Walcart.user = new Walcart.GetUser();
+
 Walcart.UserView = Backbone.View.extend({
 	dadosPessoais: {	
 	  init: function(){
@@ -12,7 +14,7 @@ Walcart.UserView = Backbone.View.extend({
 		this.events();
 		},
 	  render: function(){
-		user = new Walcart.GetUser();
+		user = Walcart.user;
 		user.fetch({		  
 			success: function(user){
 			  $('#user-data').makeTemplate({user: user, template: 'template-dados.ejs', param: 'dados'});
@@ -29,7 +31,7 @@ Walcart.UserView = Backbone.View.extend({
 		this.events();
 		},
 	  render: function(){
-		user = new Walcart.GetUser();  
+		user = Walcart.user;  
 		user.fetch({
 			success: function(user){ 	
 			  $('#user-data').makeTemplate({user: user, template: 'template-endereco.ejs', param: 'data_enderecos'}); 
@@ -46,10 +48,19 @@ Walcart.UserView = Backbone.View.extend({
 		this.events();
 		},
 	  render: function(){
-		var user = new Walcart.GetUser();
+		user = Walcart.user;
 		user.fetch({
 			success: function(user){ 
 			  $('#user-data').makeTemplate({user: user, template: 'template-carrinho.ejs', param: 'data_carrinho'});
+			  
+			  _subtotal = 0;
+			  $('.td-preco').each(function(){
+					_valor = Number($(this).html().replace('.','').replace(',','.'));
+					_subtotal = _subtotal + _valor;
+				});
+			  _subtotal = _subtotal.toFixed(2).toString();
+			  $('.td-subtotal').html(_subtotal.replace('.',','));
+			 
 			}			  
 					  });
 		},

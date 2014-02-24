@@ -9,9 +9,9 @@ $.fn.makeTemplate = function(options) {
 	 params = jQuery.extend({ user : '', template : 'dados.ejs', param: 'dados' }, options);
 	 
      return this.each(function(){
-		user = params.user;
-		dados = user.models[0].attributes[params.param];
-	    html = new EJS({url: 'templates/' + params.template}).render(dados);
-	    $(this).html(html);					   
+		_user = params.user;
+		_dados = _user.models[0].attributes[params.param];
+	    _html = new EJS({url: 'templates/' + params.template}).render(_dados);
+	    $(this).html(_html);					   
 	});
 };

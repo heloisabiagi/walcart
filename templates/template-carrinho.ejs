@@ -3,8 +3,8 @@
   <th>Item</th>
   <th>Imagem</th>
   <th>Descrição</th>
-  <th>Preço (R$)</th>
   <th>Quantidade</th>
+  <th>Preço (R$)</th>
 </thead>
 
 <tbody>
@@ -13,9 +13,14 @@
   <td><%= itens[i].nome %></td>
   <td><img src="<%= itens[i].imagem %>" alt="<%= itens[i].nome %>"/></td>
   <td><%= itens[i].descricao %></td>
-  <td class="td-preco"><%= itens[i].preco %></td>
   <td><%= itens[i].qtdade %></td>
+  <td class="td-preco"><%= itens[i].preco %></td>
 </tr>  
   <% } %> 
+<tr class="subtotal">
+  <td colspan="3">&nbsp;</td>
+  <td>Subtotal:</td>
+  <td class="td-subtotal"></td>
+</tr>  
 </tbody>  
 </table>

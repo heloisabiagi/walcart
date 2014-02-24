@@ -204,14 +204,18 @@ a:hover { text-decoration: underline;}
   li.active { 
     background: @yellow; 
     color: #FFF; 
-    border-top-left-radius: 3px; 
-    border-top-right-radius: 3px;
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
     top: 1px;
   }
   
   li.active:hover { background-color: darken(@yellow,8%);}
   li a:hover { text-decoration: none;}
-  li:hover { background: @lightgrey;}
+  li:hover { 
+  background: @lightgrey;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px;
+  }
 }
 
 .size-300 { width: 300px;}
@@ -322,7 +326,9 @@ body {
 	 tr:nth-child(2n+2) { background: @lightgrey;}
 	 }
 	 
-  img {box-shadow:0 0 12px 0px rgba(150, 150, 150, 0.5);}	 
+  img {box-shadow:0 0 12px 0px rgba(150, 150, 150, 0.5);}
+  
+  .subtotal { font-size: 20px; color: @blue;}
  
  }
 
